@@ -4,7 +4,7 @@ import React from 'react';
 const ComponetName: React.FC = () => {
   return (
     <React.Fragment>
-      <Typography variant="h2">Saldo</Typography>
+      <Typography variant="h2">Saldo Da Sua Conta</Typography>
       <Divider />
     </React.Fragment>
   );

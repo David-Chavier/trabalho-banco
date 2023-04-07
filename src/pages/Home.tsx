@@ -1,17 +1,20 @@
-import { Divider, Typography } from '@mui/material';
+import { Divider, Typography, Grid } from '@mui/material';
 import React from 'react';
 import { useAppSelector } from '../store/hooks';
-import saldoSlice from '../store/modules/saldoSlice';
 
 const ComponetName: React.FC = () => {
   const value = useAppSelector(state => state.saldo);
 
   return (
-    <React.Fragment>
-      <Typography variant="h2">Saldo Da Sua Conta</Typography>
-      <Divider />
-      <Typography variant="h3">R${value.value}</Typography>
-    </React.Fragment>
+    <Grid container>
+      <Grid item xs={12}>
+        <Typography variant="h3">Saldo da sua conta</Typography>
+        <Divider />
+      </Grid>
+      <Grid item xs={12} paddingTop={'10px'}>
+        <Typography variant="h4">R${value.value}</Typography>
+      </Grid>
+    </Grid>
   );
 };
 

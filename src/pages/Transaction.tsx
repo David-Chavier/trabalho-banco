@@ -1,7 +1,6 @@
 import { Button, Divider, Grid, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { useSelector } from 'react-redux';
 import { adicionarSaldo, removeSaldo } from '../store/modules/saldoSlice';
 
 const Transaction: React.FC = () => {
@@ -9,7 +8,6 @@ const Transaction: React.FC = () => {
 
   const dispatch = useAppDispatch();
 
-  const [saldo, setSaldo] = useState<number>(0);
   const [valor, setValor] = useState<number>(0);
 
   const GravaSaldo = () => {

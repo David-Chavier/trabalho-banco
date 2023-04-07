@@ -8,7 +8,7 @@ const ComponetName: React.FC = () => {
 
   return (
     <React.Fragment>
-      <Typography variant="h2">Saldo</Typography>
+      <Typography variant="h2">Saldo Da Sua Conta</Typography>
       <Divider />
       <Typography variant="h3">R${value.value}</Typography>
     </React.Fragment>
